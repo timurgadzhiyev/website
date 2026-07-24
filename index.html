@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="google" content="notranslate">
+<title>Тимур Гаджиев</title>
+<meta name="description" content="Режиссёр, сценарист и драматург Тимур Гаджиев. Авторские фильмы, сценарии, пьесы и аудиопьесы">
+<link rel="canonical" href="https://timurgadzhiyev.com/">
+<meta name="theme-color" content="#0B0B0C">
+
+<!-- Иконки -->
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<!-- Open Graph: Telegram, Facebook, ВКонтакте, LinkedIn -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Тимур Гаджиев">
+<meta property="og:title" content="Тимур Гаджиев">
+<meta property="og:description" content="Режиссёр, сценарист и драматург Тимур Гаджиев. Авторские фильмы, сценарии, пьесы и аудиопьесы">
+<meta property="og:url" content="https://timurgadzhiyev.com/">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:image" content="https://timurgadzhiyev.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Тимур Гаджиев">
+<meta name="twitter:description" content="Режиссёр, сценарист и драматург Тимур Гаджиев. Авторские фильмы, сценарии, пьесы и аудиопьесы">
+<meta name="twitter:image" content="https://timurgadzhiyev.com/og-image.png">
+
+<!-- Schema.org: Person -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Тимур Гаджиев",
+  "alternateName": "Timur Gadzhiyev",
+  "url": "https://timurgadzhiyev.com/",
+  "jobTitle": "Режиссёр, сценарист, драматург",
+  "sameAs": ["https://t.me/timurgadzhiyev"]
+}
+</script>
+
+<style>
+/* ---------------------------------------------------------------
+   Шрифты вынесены в отдельные файлы в папке /fonts/ и не грузятся
+   со сторонних серверов. Тексты лицензий — в /fonts/OFL-*.txt.
+
+   Cormorant Garamond — Copyright 2015 The Cormorant Project Authors
+   Inter — Copyright 2020 The Inter Project Authors
+   Обе — SIL Open Font License 1.1 — https://openfontlicense.org
+   --------------------------------------------------------------- */
+@font-face{
+  font-family:"Cormorant Garamond";
+  font-style:normal;
+  font-weight:700;
+  font-display:swap;
+  src:url("/fonts/cormorant-garamond-700.woff2") format("woff2");
+}
+@font-face{
+  font-family:"Inter";
+  font-style:normal;
+  font-weight:100 900;              /* вариативный: вся ось насыщенности */
+  font-display:swap;
+  src:url("/fonts/inter-var.woff2") format("woff2");
+}
+:root{
+  --bg:#0B0B0C;
+  --text:#F5F5F7;
+  --text-2:#8A8A8F;
+  --hair:rgba(245,245,247,.10);
+  --silver:#C9CDD4;
+  --container:800px;
+  --edge:15px;
+  --gutter:20px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI","SF Pro Display","SF Pro Text",
+              "Helvetica Neue",Arial,sans-serif;
+  font-optical-sizing:auto;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  min-height:100dvh;
+}
+
+.container{
+  max-width:var(--container);
+  margin:0 auto;
+  padding-left:var(--gutter);
+  padding-right:var(--gutter);
+  min-height:100dvh;
+  display:flex;
+  flex-direction:column;
+  padding-bottom:calc(env(safe-area-inset-bottom) + 20px);
+}
+@media (max-width:1024px){
+  :root{ --gutter:10px; }
+}
+
+/* ---------- ВЕРХНЯЯ ПАНЕЛЬ ---------- */
+.topbar{
+  padding-top:var(--edge);
+  padding-bottom:12px;
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  border-bottom:1px solid var(--hair);
+}
+.lang{display:flex;align-items:center;gap:.5rem;flex:none}
+.lang-btn{
+  background:none;border:0;padding:.3rem .2rem;cursor:pointer;
+  font:inherit;font-size:clamp(.72rem,2.2vw,.8rem);font-weight:600;letter-spacing:.05em;
+  color:var(--silver);transition:color .2s ease;-webkit-tap-highlight-color:transparent;
+}
+.lang-btn:hover{color:var(--text)}
+.lang-btn.active{color:var(--text)}
+.lang-sep{width:1px;height:11px;background:var(--hair)}
+.topbar-mail{
+  font-size:clamp(.72rem,2.2vw,.8rem);font-weight:500;letter-spacing:.02em;
+  color:var(--silver);text-decoration:none;white-space:nowrap;
+  transition:color .2s ease;-webkit-tap-highlight-color:transparent;
+}
+.topbar-mail:hover,.topbar-mail:focus-visible{color:var(--text)}
+
+/* ---------- ПРЕДСТАВЛЕНИЕ (по центру) ---------- */
+main{
+  margin-top:70px;
+}
+.intro{
+  text-align:center;
+}
+.name{
+  font-family:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  font-size:clamp(1.9rem,12vw,5.4rem);
+  font-weight:700;letter-spacing:.005em;line-height:1.1;
+  white-space:nowrap;
+  color:var(--text);
+}
+.tagline{
+  margin-top:22px;
+  font-size:clamp(1rem,3.4vw,1.28rem);font-weight:400;
+  color:var(--text-2);letter-spacing:-.01em;
+}
+
+/* ---------- КАНАЛ (ярлык + ссылка) ---------- */
+.channel{
+  text-align:center;
+  font-size:clamp(.8rem,2.4vw,.9rem);
+  line-height:1.9;
+  color:var(--text-2);
+}
+.channel .label{                 /* статичный ярлык: плотный капс, серый */
+  text-transform:uppercase;
+  letter-spacing:.03em;
+  font-weight:500;
+}
+.channel a{                      /* кликабельное: серебро */
+  color:var(--silver);text-decoration:none;
+  transition:color .2s ease;-webkit-tap-highlight-color:transparent;
+}
+.channel a:hover,.channel a:focus-visible{color:var(--text)}
+
+/* ---------- РАЗДЕЛЫ РАБОТ (по левому краю) ---------- */
+.work{ margin-top:0; }
+.section-label{
+  margin-top:38px;margin-bottom:14px;
+  font-size:.78rem;font-weight:600;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--text-2);
+}
+.work .section-label:first-child{margin-top:70px}
+.rows{list-style:none}
+.rows li{
+  display:flex;align-items:baseline;justify-content:space-between;gap:1rem;
+  padding:18px 4px;
+  border-top:1px solid var(--hair);
+}
+.rows li:last-child{border-bottom:1px solid var(--hair)}
+.rows .k{
+  font-size:clamp(.95rem,2.6vw,1.05rem);font-weight:500;letter-spacing:-.01em;
+  color:var(--text);
+}
+.rows .cta{
+  flex:none;
+  color:var(--silver);text-decoration:none;
+  font-size:clamp(.72rem,2vw,.82rem);font-weight:500;
+  letter-spacing:.03em;text-transform:uppercase;
+  transition:color .2s ease;-webkit-tap-highlight-color:transparent;
+}
+.rows .cta:hover{color:var(--text)}
+.rows .status{
+  flex:none;
+  color:var(--text-2);
+  font-size:clamp(.72rem,2vw,.82rem);font-weight:500;
+  letter-spacing:.03em;text-transform:uppercase;
+}
+
+/* ---------- ПОДВАЛ ---------- */
+.site-foot{
+  margin-bottom:auto;
+  padding-top:26px;          /* отступ над площадками */
+  text-align:center;
+}
+.legal{
+  margin:26px 0 0;          /* отступ под площадками — равен верхнему */
+  font-size:clamp(.72rem,2.2vw,.8rem);line-height:1.65;
+  color:var(--text-2);letter-spacing:-.005em;
+  text-align:center;
+}
+.legal p + p{margin-top:8px}
+.legal a{color:var(--silver);text-decoration:none;transition:color .2s ease}
+.legal a:hover{color:var(--text)}
+.copyright{
+  margin-top:14px;
+  font-size:clamp(.75rem,2.4vw,.85rem);color:var(--text-2);letter-spacing:-.005em;
+}
+
+/* ---------- ПОЯВЛЕНИЕ ---------- */
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.rise{opacity:0;animation:rise .65s cubic-bezier(.22,.7,.25,1) forwards}
+.r1{animation-delay:.05s}.r2{animation-delay:.12s}.r3{animation-delay:.19s}
+.r4{animation-delay:.26s}.r5{animation-delay:.33s}.r6{animation-delay:.40s}
+.r7{animation-delay:.47s}.r8{animation-delay:.54s}.r9{animation-delay:.61s}
+@media (prefers-reduced-motion:reduce){.rise{opacity:1;animation:none}}
+
+:focus-visible{outline:2px solid var(--silver);outline-offset:3px;border-radius:6px}
+::selection{background:var(--silver);color:var(--bg)}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+  <div class="topbar rise r1">
+    <div class="lang" role="group" aria-label="Language">
+      <button class="lang-btn" data-lang="ru" type="button">RU</button>
+      <span class="lang-sep" aria-hidden="true"></span>
+      <button class="lang-btn" data-lang="en" type="button">EN</button>
+    </div>
+    <a class="topbar-mail" href="mailto:i@timurgadzhiyev.com">i@timurgadzhiyev.com</a>
+  </div>
+
+  <main>
+    <header class="intro">
+      <h1 class="name rise r2" data-i18n="name">Тимур Гаджиев</h1>
+      <p class="tagline rise r3" data-i18n="tagline">Режиссёр, сценарист, драматург</p>
+    </header>
+
+    <section class="work">
+      <h2 class="section-label rise r4" data-i18n="films">Фильмы</h2>
+      <ul class="rows rise r4">
+        <li><span class="k" data-i18n="film1">ОСЕЧКА (к/м)</span><span class="status" data-i18n="preprod">Пре-продакшн</span></li>
+      </ul>
+
+      <h2 class="section-label rise r5" data-i18n="scripts">Сценарии</h2>
+      <ul class="rows rise r5">
+        <li><span class="k" data-i18n="script1">ОСЕЧКА (2026)</span><a class="cta" href="/osechka.pdf" download data-i18n="download">Скачать</a></li>
+      </ul>
+
+      <h2 class="section-label rise r6" data-i18n="plays">Пьесы</h2>
+      <ul class="rows rise r6">
+        <li><span class="k" data-i18n="play1">НЕ НАВРЕДИ</span><span class="status" data-i18n="soon">Скоро</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <p class="channel rise r7"><span class="label" data-i18n="channel">Канал</span>&nbsp;— <a href="https://t.me/timurgadzhiyev" target="_blank" rel="noopener">t.me/timurgadzhiyev</a></p>
+    <div class="legal rise r8">
+      <p data-i18n="privacy">На этом сайте не собираются персональные данные: cookie, счётчики и системы аналитики не используются, сторонние сервисы не подключены. Единственное исключение — технические журналы хостинга, которые ведёт любой сервер в интернете.</p>
+      <p><span data-i18n="licensePre">Произведения публикуются под лицензией</span> <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a><span data-i18n="licensePost">: разрешено свободно копировать и распространять в образовательных и некоммерческих целях с указанием авторства, без изменений и переработок. Любое коммерческое использование запрещено.</span></p>
+    </div>
+    <div class="copyright rise r9" data-i18n="footer">© Тимур Гаджиев, 2026.</div>
+  </footer>
+
+</div>
+
+<script>
+const YEAR = new Date().getFullYear();
+
+const I18N = {
+  ru:{
+    name:"Тимур Гаджиев", tagline:"Режиссёр, сценарист, драматург",
+    films:"Фильмы", scripts:"Сценарии", plays:"Пьесы", channel:"Канал",
+    download:"Скачать", preprod:"Пре-продакшн", soon:"Скоро",
+    film1:"ОСЕЧКА (к/м)", script1:"ОСЕЧКА (2026)", play1:"НЕ НАВРЕДИ",
+    privacy:"На этом сайте не собираются персональные данные: cookie, счётчики и системы аналитики не используются, сторонние сервисы не подключены. Единственное исключение — технические журналы хостинга, которые ведёт любой сервер в интернете.",
+    licensePre:"Произведения публикуются под лицензией",
+    licensePost:": разрешено свободно копировать и распространять в образовательных и некоммерческих целях с указанием авторства, без изменений и переработок. Любое коммерческое использование запрещено.",
+    footer:`© Тимур Гаджиев, ${YEAR}.`
+  },
+  en:{
+    name:"Timur Gadzhiyev", tagline:"Director, screenwriter, playwright",
+    films:"Films", scripts:"Scripts", plays:"Plays", channel:"Channel",
+    download:"Download", preprod:"Pre-production", soon:"Soon",
+    film1:"MISFIRE (SF)", script1:"MISFIRE (2026)", play1:"DO NO HARM",
+    privacy:"This site collects no personal data: no cookies, no counters, no analytics, and no third-party services are connected. The only exception is the host's technical logs, which every server on the internet keeps.",
+    licensePre:"Works are published under the",
+    licensePost:" licence: free to share for educational and non-commercial purposes with attribution, without changes or adaptations. Any commercial use is prohibited.",
+    footer:`© Timur Gadzhiyev, ${YEAR}.`
+  }
+};
+
+(function () {
+
+  function setLang(l){
+    const t = I18N[l];
+    document.documentElement.lang = l;
+    document.querySelectorAll('[data-i18n]').forEach(el => { el.textContent = t[el.dataset.i18n]; });
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === l));
+    try { localStorage.setItem('lang', l); } catch(e){}
+  }
+  let saved = null;
+  try { saved = localStorage.getItem('lang'); } catch(e){}
+  const initial = (saved === 'ru' || saved === 'en') ? saved : 'ru';
+  setLang(initial);
+  document.querySelectorAll('.lang-btn').forEach(b =>
+    b.addEventListener('click', () => setLang(b.dataset.lang)));
+})();
+</script>
+</body>
+</html>
