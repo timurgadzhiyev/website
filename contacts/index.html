@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="google" content="notranslate">
+<title>Контакты — Тимур Гаджиев</title>
+<meta name="theme-color" content="#0B0B0C">
+
+<!-- Страница не индексируется: она для передачи из рук в руки, а не для поиска.
+     Запрет стоит здесь, а не в robots.txt — см. пояснение ниже по файлу. -->
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+
+<!-- Иконки -->
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<!-- Open Graph: Telegram, Facebook, ВКонтакте, LinkedIn -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Тимур Гаджиев">
+<meta property="og:title" content="Тимур Гаджиев">
+<meta property="og:description" content="Контакты Тимура Гаджиева.">
+<meta property="og:url" content="https://timurgadzhiyev.com/contacts">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:image" content="https://timurgadzhiyev.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Тимур Гаджиев">
+<meta name="twitter:description" content="Контакты Тимура Гаджиева.">
+<meta name="twitter:image" content="https://timurgadzhiyev.com/og-image.png">
+
+<style>
+/* ---------------------------------------------------------------
+   Только Inter: антиквы на этой странице нет ни в одной строке,
+   поэтому Cormorant Garamond не грузится вовсе.
+   Пути абсолютные — страница лежит в подпапке /contacts/.
+
+   Inter — Copyright 2020 The Inter Project Authors
+   SIL Open Font License 1.1 — https://openfontlicense.org
+   --------------------------------------------------------------- */
+@font-face{
+  font-family:"Inter";
+  font-style:normal;
+  font-weight:100 900;              /* вариативный: вся ось насыщенности */
+  font-display:swap;
+  src:url("/fonts/inter-var.woff2") format("woff2");
+}
+:root{
+  --bg:#0B0B0C;
+  --text:#F5F5F7;
+  --text-2:#8A8A8F;
+  --hair:rgba(245,245,247,.10);
+  --silver:#C9CDD4;
+  --container:800px;
+  --edge:15px;
+  --gutter:20px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{
+  -webkit-text-size-adjust:100%;
+  scrollbar-width:none;             /* Firefox, Chrome 121+ */
+  -ms-overflow-style:none;          /* старые Edge / IE */
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar{            /* Chrome, Safari, Edge */
+  width:0;height:0;display:none;
+}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI","SF Pro Display","SF Pro Text",
+              "Helvetica Neue",Arial,sans-serif;
+  font-optical-sizing:auto;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  min-height:100dvh;
+}
+
+.container{
+  max-width:var(--container);
+  margin:0 auto;
+  padding-left:var(--gutter);
+  padding-right:var(--gutter);
+  min-height:100dvh;
+  display:flex;
+  flex-direction:column;
+  padding-bottom:calc(env(safe-area-inset-bottom) + 20px);
+}
+@media (max-width:1024px){
+  :root{ --gutter:10px; }
+}
+
+/* ---------- ВЕРХНЯЯ ПАНЕЛЬ (перенесена; почта заменена на «Главную») ---------- */
+.topbar{
+  padding-top:var(--edge);
+  padding-bottom:12px;
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  border-bottom:1px solid var(--hair);
+}
+.lang{display:flex;align-items:center;gap:.5rem;flex:none}
+.lang-btn{
+  background:none;border:0;padding:.3rem .2rem;cursor:pointer;
+  font:inherit;font-size:clamp(.72rem,2.2vw,.8rem);font-weight:600;letter-spacing:.05em;
+  color:var(--silver);transition:color .2s ease;-webkit-tap-highlight-color:transparent;
+}
+.lang-btn:hover{color:var(--text)}
+.lang-btn.active{color:var(--text)}
+.lang-sep{width:1px;height:11px;background:var(--hair)}
+.topbar-home{                      /* на месте почты: капс, как прочие ярлыки-действия */
+  font-size:clamp(.72rem,2.2vw,.8rem);font-weight:500;
+  text-transform:uppercase;letter-spacing:.05em;
+  color:var(--silver);text-decoration:none;white-space:nowrap;
+  transition:color .2s ease;-webkit-tap-highlight-color:transparent;
+}
+.topbar-home:hover,.topbar-home:focus-visible{color:var(--text)}
+
+/* ---------- КОНТАКТЫ (по центру оставшегося пространства) ---------- */
+.contacts{
+  margin:auto 0;                   /* центрирует по вертикали на любом экране */
+  text-align:center;
+}
+.contacts a{
+  display:block;
+  padding:15px 0;                  /* задаёт ритм и даёт крупную область нажатия */
+  text-transform:uppercase;
+  font-size:clamp(.95rem,2.8vw,1.05rem);
+  font-weight:500;
+  letter-spacing:.03em;
+  text-indent:.03em;               /* гасит хвостовой трекинг при центровке */
+  color:var(--silver);text-decoration:none;
+  transition:color .2s ease;-webkit-tap-highlight-color:transparent;
+}
+.contacts a:hover,.contacts a:focus-visible{color:var(--text)}
+
+/* ---------- ПОЯВЛЕНИЕ ---------- */
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.rise{opacity:0;animation:rise .65s cubic-bezier(.22,.7,.25,1) forwards}
+.r1{animation-delay:.05s}.r2{animation-delay:.12s}.r3{animation-delay:.19s}
+.r4{animation-delay:.26s}
+@media (prefers-reduced-motion:reduce){.rise{opacity:1;animation:none}}
+
+:focus-visible{outline:2px solid var(--silver);outline-offset:3px;border-radius:6px}
+::selection{background:var(--silver);color:var(--bg)}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+  <div class="topbar rise r1">
+    <div class="lang" role="group" aria-label="Language">
+      <button class="lang-btn" data-lang="ru" type="button">RU</button>
+      <span class="lang-sep" aria-hidden="true"></span>
+      <button class="lang-btn" data-lang="en" type="button">EN</button>
+    </div>
+    <a class="topbar-home" href="https://timurgadzhiyev.com/" data-i18n="home">Главная</a>
+  </div>
+
+  <main class="contacts">
+    <a class="rise r2" href="https://signal.me/#eu/Dfohlo7pYbuMqlVYNDZwccU0u931x-MrISuiIJ8SieZmEPHC6R9PCb7IhPeS7WR5" target="_blank" rel="noopener">Signal</a>
+    <a class="rise r3" href="https://t.me/timurgadzhiyev" target="_blank" rel="noopener">Telegram</a>
+    <a class="rise r4" href="mailto:i@timurgadzhiyev.com" data-i18n="email">Электронная почта</a>
+  </main>
+
+</div>
+
+<script>
+const I18N = {
+  ru:{
+    home:"Главная",
+    email:"Электронная почта",
+    title:"Контакты — Тимур Гаджиев"
+  },
+  en:{
+    home:"Home",
+    email:"Email",
+    title:"Contacts — Timur Gadzhiyev"
+  }
+};
+
+(function () {
+
+  function setLang(l){
+    const t = I18N[l];
+    document.documentElement.lang = l;
+    document.title = t.title;
+    document.querySelectorAll('[data-i18n]').forEach(el => { el.textContent = t[el.dataset.i18n]; });
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === l));
+    try { localStorage.setItem('lang', l); } catch(e){}
+  }
+  let saved = null;
+  try { saved = localStorage.getItem('lang'); } catch(e){}
+  const initial = (saved === 'ru' || saved === 'en') ? saved : 'ru';
+  setLang(initial);
+  document.querySelectorAll('.lang-btn').forEach(b =>
+    b.addEventListener('click', () => setLang(b.dataset.lang)));
+})();
+</script>
+</body>
+</html>
