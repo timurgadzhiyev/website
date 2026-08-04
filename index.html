@@ -15,6 +15,12 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 
+<!-- Установка на домашний экран (iOS читает это, а не манифест) -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="ТГ">
+
 <!-- Open Graph: Telegram, Facebook, ВКонтакте, LinkedIn -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Тимур Гаджиев">
@@ -331,6 +337,13 @@ const I18N = {
   document.querySelectorAll('.lang-btn').forEach(b =>
     b.addEventListener('click', () => setLang(b.dataset.lang)));
 })();
+
+/* Офлайн-доступ и установка на домашний экран. */
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').catch(() => {});
+  });
+}
 </script>
 </body>
 </html>
