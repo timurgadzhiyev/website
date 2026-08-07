@@ -167,7 +167,7 @@ main{
 .channel{
   text-align:center;
   font-size:clamp(.8rem,2.4vw,.9rem);
-  line-height:1.9;
+  line-height:1.6;
   color:var(--text-2);
 }
 .channel .label{                 /* статичный ярлык: плотный капс, серый */
@@ -222,7 +222,7 @@ main{
   text-align:center;
 }
 .legal{
-  margin:26px 0 0;          /* отступ под площадками — равен верхнему */
+  margin:23px 0 0;          /* 23, а не 26: компенсирует межстрочный интервал самого блока */
   font-size:clamp(.72rem,2.2vw,.8rem);line-height:1.65;
   color:var(--text-2);letter-spacing:-.005em;
   text-align:center;
