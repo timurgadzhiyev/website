@@ -9,15 +9,13 @@
    Чтобы принудительно обновить кэш у всех — поднимите VERSION.
    --------------------------------------------------------------- */
 
-const VERSION = 'v1';
+const VERSION = 'v2';
 const CACHE   = `tg-${VERSION}`;
 
 /* Минимум для офлайн-показа: страница, шрифты, иконки. */
 const PRECACHE = [
   '/',
   '/404.html',
-  '/fonts/inter-var.woff2',
-  '/fonts/cormorant-garamond-700.woff2',
   '/icon-192.png',
   '/icon-512.png',
   '/icon-maskable-512.png'
